@@ -5,7 +5,8 @@ def print_upper_words(words):
         words (list): list of strings
     """
     for word in words:
-        print(word.upper())
+        if word[0] == 'e' or word[0] == 'E':
+            print(word.upper())
         
         
-print_upper_words(['fish', 'cat','dog','duck'])
+print_upper_words(['fish', 'cat','dog','duck', 'eagle'])
